@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1rem 2rem;
+      background: white;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>Demonstration of HTML5 elements, structure, and validation</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About This Page</h2>
+      <p>This page demonstrates the use of various HTML5 elements, including semantic layout, media, lists, tables, and a form with comprehensive validation and accessibility features.</p>
+    </section>
+
+    <section>
+      <h3>Media Example</h3>
+      <img src="https://via.placeholder.com/600x200" alt="Placeholder Image">
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h3>Key Features</h3>
+      <ul>
+        <li>HTML5 Form with various input types</li>
+        <li>Tables for data presentation</li>
+        <li>Semantic layout using &lt;section&gt;, &lt;article&gt;, &lt;main&gt;</li>
+        <li>Client-side validation using HTML5 features</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Sample Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Autocomplete</td>
+            <td>Helps the browser suggest previously entered values.</td>
+          </tr>
+          <tr>
+            <td>Validation</td>
+            <td>Ensures data quality using built-in constraints.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <article>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?\d{10,15}$" required>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." maxlength="500"></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label>
+
+        <label for="readonlyField">Referral Code (Read-only):</label>
+        <input type="text" id="readonlyField" value="REF2025" readonly>
+
+        <button type="submit">Register</button>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Demo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
